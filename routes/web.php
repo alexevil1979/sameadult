@@ -34,8 +34,7 @@ Route::get('/locale/{locale}', [LocaleController::class, 'switch'])->name('local
 // Webhook — CSRF exempt, no age gate, no auth
 // =========================================================================
 Route::post('/webhook/nowpayments', [WebhookController::class, 'nowpayments'])
-    ->name('webhook.nowpayments')
-    ->withoutMiddleware([\Illuminate\Foundation\Http\Middleware\VerifyCsrfToken::class]);
+    ->name('webhook.nowpayments');
 
 // =========================================================================
 // Public Routes — Require age verification

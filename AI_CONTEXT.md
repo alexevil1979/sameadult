@@ -10,7 +10,7 @@
 
 | Компонент | Технология |
 |---|---|
-| Backend | Laravel 12 (PHP 8.2), MySQL 8, Apache |
+| Backend | Laravel 10.50 (PHP 8.1.18), MySQL 8, Apache |
 | Auth | Sanctum (API tokens + session web) |
 | Payments | NOWPayments (крипто-шлюз, HMAC-SHA512 webhook) |
 | Frontend (web) | Blade + Tailwind CSS (CDN) |

@@ -13,12 +13,12 @@
 sudo apt update && sudo apt upgrade -y
 
 # Установить необходимое ПО (если не установлено)
-sudo apt install -y php8.2 php8.2-fpm php8.2-mysql php8.2-mbstring php8.2-xml \
-    php8.2-curl php8.2-zip php8.2-gd php8.2-intl php8.2-bcmath \
-    apache2 libapache2-mod-php8.2 mysql-server git unzip curl
+sudo apt install -y php8.1 php8.1-fpm php8.1-mysql php8.1-mbstring php8.1-xml \
+    php8.1-curl php8.1-zip php8.1-gd php8.1-intl php8.1-bcmath \
+    apache2 libapache2-mod-php8.1 mysql-server git unzip curl
 
 # Включить модули Apache
-sudo a2enmod rewrite headers ssl php8.2
+sudo a2enmod rewrite headers ssl php8.1
 sudo systemctl restart apache2
 
 # Установить Composer
